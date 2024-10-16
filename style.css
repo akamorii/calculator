@@ -1,0 +1,110 @@
+
+*{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: #adadad;
+}
+
+#main {
+    height: 550px;
+    width: 330px;
+    background-color: #161616;
+    display: grid;
+    grid-template-rows: 30% 14% 14% 14% 14% 14%;
+    box-shadow: 3px 6px 11px rgb(68, 68, 68);
+    border-radius: 20px;
+}
+
+.gi {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.grid_item1{
+    /* background-color: #ff0000; */
+    color: #f1f1f1;
+    font-size: 40px;
+    /* padding-left: ; */
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+}
+
+
+/* #main:hover{
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out;
+} */
+
+
+.gi .btn:last-child{
+    background-color: #ff9f0a;
+}
+
+#big_btn{
+    width: 140px;
+    padding-right: 80px;
+    box-sizing: border-box;
+
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    height: 60px;
+    width: 60px;
+    background-color: #373737;
+    border-radius: 35px;
+    color: #f1f1f1;
+}
+
+@keyframes transforma{
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        /* transform: rotate(360deg);
+        color:aquamarine; */
+    }
+}
+
+.gi .btn:last-child:hover{
+    cursor: pointer;
+    transition-property: background-coolor,color;
+    transition: 0.5s ease-in-out;
+    color: #373737;
+    background-color: #f1f1f1;
+    /* transform: rotate(360deg); */
+    /* animation: transforma 0.3; */
+
+}
+
+.btn:hover {
+    cursor: pointer;
+    transition-property: background-coolor,color;
+    transition: 0.5s ease-in-out;
+    color: #373737;
+    background-color: #f1f1f1;
+    /* transform: rotate(360deg); */
+    /* animation: transforma 0.3; */
+
+}
+
+
+.btn:active:not(.gi .btn:last-child) {
+    animation-duration: 0.1s;
+    transition-duration: 0.1s;
+    /* animation-name: transforma; */
+    background-color: #575757;
+    /* transition: transform 0.3s ease-in-out; */
+    /* transform: rotate(360deg); */
+}
